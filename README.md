@@ -13,7 +13,7 @@ A React Native boilerplate with pre-installed and pre-configured libraries to re
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/javbk201/RN-Kittens-Template.git
 cd kittens_boilerplate
 
 # Install dependencies
@@ -54,10 +54,13 @@ npm run test       # Run tests with Jest
 ### Utilities
 | Library | Version | Description |
 |---------|---------|-------------|
+| [@shopify/flash-list](https://shopify.github.io/flash-list/) | ^2.2.0 | High-performance list component |
 | [axios](https://axios-http.com/) | ^1.13.2 | HTTP client |
+| [react-native-nitro-modules](https://github.com/margelo/react-native-nitro-modules) | ^0.33.2 | Native modules framework |
 | [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/) | ^4.2.1 | High-performance animations |
 | [react-native-screens](https://github.com/software-mansion/react-native-screens) | ^4.19.0 | Optimized native navigation |
 | [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context) | ^5.6.2 | Safe area handling |
+| [react-native-splash-view](https://github.com/nicksenger/react-native-splash-view) | ^0.0.19 | Native splash screen |
 | [react-native-svg](https://github.com/software-mansion/react-native-svg) | ^15.15.1 | SVG support |
 | [react-native-worklets](https://github.com/margelo/react-native-worklets) | ^0.7.1 | Worklets for background tasks |
 

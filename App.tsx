@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, IconRegistry, Layout, Text } from '@ui-kitten/components';
+import { hideSplash } from "react-native-splash-view"
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 
 const HomeScreen = () => (
@@ -9,11 +10,22 @@ const HomeScreen = () => (
   </Layout>
 );
 
-export default () => (
-  <>
-    <IconRegistry icons={EvaIconsPack} />
-    <ApplicationProvider {...eva} theme={eva.light}>
-      <HomeScreen />
-    </ApplicationProvider>
-  </>
-);
+
+const App = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      hideSplash(); // Hide after some time
+    }, 5000);
+  }, []);
+
+  return (
+    <>
+      <IconRegistry icons={EvaIconsPack} />
+      <ApplicationProvider {...eva} theme={eva.light}>
+        <HomeScreen />
+      </ApplicationProvider>
+    </>
+  );
+};
+
+export default App;
